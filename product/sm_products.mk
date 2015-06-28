@@ -50,9 +50,9 @@ ifneq ($(filter slimremix%,$(TARGET_PRODUCT)),)
   include $(SM_VENDOR)/product/slimremix_product.mk
 endif
 
-ifneq ($(filter cmremix%,$(TARGET_PRODUCT)),)
-  TARGET_BASE_ROM := cmremix
-  include $(SM_VENDOR)/product/cmremix_product.mk
+ifneq ($(filter bliss%,$(TARGET_PRODUCT)),)
+  TARGET_BASE_ROM := bliss
+  include $(SM_VENDOR)/product/bliss_product.mk
 endif
 
 # Extra ROM packages
